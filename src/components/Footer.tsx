@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400 text-sm">
-            © 2024 Taste of Ceylon - by <a href="https://scrollloop.com" target="_blank" rel="noopener noreferrer" className="text-yellow-400 hover:text-yellow-300 transition-colors">Scrollloop.com</a>. All rights reserved. | Manufactured in Sri Lanka.
+            © 2025 Taste of Ceylon - By <a href="https://scrollloop.com" target="_blank" rel="noopener noreferrer" className="text-yellow-400 hover:text-yellow-300 transition-colors">Scrollloop.com</a>. All rights reserved. | Manufactured in Sri Lanka.
           </p>
         </div>
       </div>
