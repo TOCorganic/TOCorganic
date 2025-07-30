@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import LoadingScreen from './components/LoadingScreen';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import AboutUs from './components/AboutUs';
+import QualityStandards from './components/QualityStandards';
 import Products from './components/Products';
 import CTA from './components/CTA';
 import Contact from './components/Contact';
@@ -39,6 +41,8 @@ function App() {
         <>
           <Header onStoryClick={handleStoryClick} />
           <Hero onStoryClick={handleStoryClick} />
+          <AboutUs />
+          <QualityStandards />
           <Products />
           <CTA />
           <Contact />

@@ -14,7 +14,7 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ isLoading }) => {
           <div className="w-20 h-20 border-4 border-yellow-400 border-t-transparent rounded-full animate-spin mx-auto"></div>
         </div>
         <h1 className="text-4xl font-bold text-white mb-2">Taste of Ceylon</h1>
-        <p className="text-yellow-400 text-lg">Natural Sri Lankan Food Products</p>
+        <p className="text-yellow-400 text-lg">Wake Up Your Taste Buds</p>
         <div className="mt-6 flex justify-center">
           <div className="flex space-x-1">
             <div className="w-2 h-2 bg-yellow-400 rounded-full animate-bounce"></div>
