@@ -89,8 +89,8 @@ const QualityStandards: React.FC = () => {
                 <div className="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Award className="w-8 h-8 text-black" />
                 </div>
-                <h4 className="text-xl font-bold text-yellow-400 mb-2">Coming Soon</h4>
-                <p className="text-gray-300 text-sm">{cert.name}</p>
+                <h4 className="text-xl font-bold text-yellow-400 mb-2">{cert.name}</h4>
+                <p className="text-gray-300 text-sm">{cert.description}</p>
               </div>
             ))}
           </div>

@@ -57,32 +57,10 @@ const Hero: React.FC<HeroProps> = ({ onStoryClick }) => {
         </div>
 
         <div className="relative">
-          <div className="bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-3xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-500 relative overflow-hidden">
-            {/* Animated background elements */}
-            <div className="absolute inset-0 opacity-20">
-              <div className="absolute top-4 left-4 w-8 h-8 bg-white rounded-full animate-pulse"></div>
-              <div className="absolute top-12 right-8 w-4 h-4 bg-white rounded-full animate-bounce" style={{ animationDelay: '0.5s' }}></div>
-              <div className="absolute bottom-8 left-12 w-6 h-6 bg-white rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
-              <div className="absolute bottom-4 right-4 w-3 h-3 bg-white rounded-full animate-bounce" style={{ animationDelay: '1.5s' }}></div>
-            </div>
-            
+          <div className="bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-3xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-500">
             <div className="bg-white rounded-2xl p-6 text-center">
-              {/* Animated leaf icon */}
-              <div className="relative mb-4">
-                <div className="w-16 h-16 mx-auto bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center animate-pulse">
-                  <svg className="w-10 h-10 text-white animate-bounce" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z"/>
-                  </svg>
-                </div>
-                {/* Floating particles */}
-                <div className="absolute -top-2 -right-2 w-3 h-3 bg-yellow-300 rounded-full animate-ping"></div>
-                <div className="absolute -bottom-1 -left-1 w-2 h-2 bg-green-300 rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
-              </div>
-              <h3 className="text-2xl font-bold text-black mb-2">
-                <span className="bg-gradient-to-r from-green-600 to-yellow-600 bg-clip-text text-transparent">
-                  Natural & Pure
-                </span>
-              </h3>
+              <div className="text-6xl mb-4">🌿</div>
+              <h3 className="text-2xl font-bold text-black mb-2">Natural & Pure</h3>
               <p className="text-gray-600">
                 From the heart of Sri Lanka's finest tamarind groves
               </p>

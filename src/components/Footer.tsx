@@ -31,36 +31,10 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-gray-300">
-              <li>
-                <button 
-                  onClick={() => document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="hover:text-yellow-400 transition-colors text-left"
-                >
-                  Our Products
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="hover:text-yellow-400 transition-colors text-left"
-                >
-                  About Us
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => document.getElementById('quality')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="hover:text-yellow-400 transition-colors text-left"
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="hover:text-yellow-400 transition-colors text-left"
-                >
-                  Contact Us
-                </button>
-              </li>
+              <li><a href="#products" className="hover:text-yellow-400 transition-colors">Our Products</a></li>
+              <li><a href="#contact" className="hover:text-yellow-400 transition-colors">Contact Us</a></li>
+              <li><a href="#" className="hover:text-yellow-400 transition-colors">About Us</a></li>
+              <li><a href="#" className="hover:text-yellow-400 transition-colors">Quality Standards</a></li>
             </ul>
           </div>
 
@@ -71,14 +45,7 @@ const Footer: React.FC = () => {
               <p>Matale - Sri Lanka</p>
               <p>+94 77 712 8439</p>
               <p>+94 75 812 8439</p>
-              <p>
-                <a 
-                  href="mailto:tasteofceylon01@gmail.com" 
-                  className="hover:text-yellow-400 transition-colors"
-                >
-                  tasteofceylon01@gmail.com
-                </a>
-              </p>
+              <p>tasteofceylon01@gmail.com</p>
             </div>
           </div>
         </div>
@@ -90,7 +57,6 @@ const Footer: React.FC = () => {
         </div>
       </div>
     </footer>
-  )
   );
 };
 
