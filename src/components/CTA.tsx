@@ -47,7 +47,7 @@ const CTA: React.FC = () => {
               <div className="text-gray-300">Happy Customers</div>
             </div>
             <div className="space-y-2">
-              <div className="text-3xl font-bold text-yellow-400">8+</div>
+              <div className="text-3xl font-bold text-yellow-400">15+</div>
               <div className="text-gray-300">Premium Products</div>
             </div>
           </div>

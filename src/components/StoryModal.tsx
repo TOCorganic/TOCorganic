@@ -104,7 +104,13 @@ const StoryModal: React.FC<StoryModalProps> = ({ isOpen, onClose }) => {
           {/* Call to Action */}
           <div className="mt-8 text-center">
             <button
-              onClick={onClose}
+              onClick={() => {
+                onClose();
+                setTimeout(() => {
+                  const element = document.getElementById('products');
+                  element?.scrollIntoView({ behavior: 'smooth' });
+                }, 100);
+              }}
               className="bg-black hover:bg-yellow-400 hover:text-black text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300"
             >
               Explore Our Products

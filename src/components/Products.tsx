@@ -9,7 +9,7 @@ const Products: React.FC = () => {
       description: "A refreshing tamarind drink packed with natural vitamins and Ayurvedic benefits",
       icon: <Droplets className="w-8 h-8" />,
       benefits: ["Rich in Vitamin C", "Natural Antioxidants", "Digestive Health"],
-      price: "LKR 450"
+      price: "$$$"
     },
     {
       id: 2,
@@ -17,7 +17,7 @@ const Products: React.FC = () => {
       description: "Classic tamarind sauce with authentic Sri Lankan flavors",
       icon: <Zap className="w-8 h-8" />,
       benefits: ["No Preservatives", "Traditional Recipe", "Versatile Use"],
-      price: "LKR 320"
+      price: "$$$"
     },
     {
       id: 3,
@@ -25,7 +25,7 @@ const Products: React.FC = () => {
       description: "Spicy blend of tamarind and premium black pepper for bold flavors",
       icon: <Flame className="w-8 h-8" />,
       benefits: ["Metabolism Boost", "Anti-inflammatory", "Bold Flavor"],
-      price: "LKR 380"
+      price: "$$$"
     },
     {
       id: 4,
@@ -33,7 +33,7 @@ const Products: React.FC = () => {
       description: "Premium tamarind sauce with unique Naimiris blend",
       icon: <Cherry className="w-8 h-8" />,
       benefits: ["Premium Quality", "Unique Blend", "Gourmet Taste"],
-      price: "LKR 420"
+      price: "$$$"
     },
     {
       id: 5,
@@ -41,7 +41,7 @@ const Products: React.FC = () => {
       description: "Sweet and tangy red jam made from finest tamarind",
       icon: <Apple className="w-8 h-8" />,
       benefits: ["Natural Sweetness", "Rich Flavor", "Breakfast Perfect"],
-      price: "LKR 480"
+      price: "$$$"
     },
     {
       id: 6,
@@ -49,7 +49,7 @@ const Products: React.FC = () => {
       description: "Fresh green tamarind jam with a unique taste profile",
       icon: <Apple className="w-8 h-8" />,
       benefits: ["Fresh Taste", "Natural Colors", "Healthy Choice"],
-      price: "LKR 480"
+      price: "$$$"
     },
     {
       id: 7,
@@ -57,7 +57,7 @@ const Products: React.FC = () => {
       description: "Traditional Sri Lankan lime pickle with tamarind essence",
       icon: <Citrus className="w-8 h-8" />,
       benefits: ["Traditional Recipe", "Long Shelf Life", "Authentic Taste"],
-      price: "LKR 350"
+      price: "$$$"
     },
     {
       id: 8,
@@ -65,9 +65,16 @@ const Products: React.FC = () => {
       description: "Discover our expanding range of natural tamarind-based products",
       icon: <Plus className="w-8 h-8" />,
       benefits: ["Coming Soon", "Natural Ingredients", "Sri Lankan Made"],
-      price: "Contact Us"
+      price: "$$$"
     }
   ];
+
+  const handleLearnMoreClick = () => {
+    const phoneNumber = "+94758128439";
+    const message = "Hello! I'm interested in learning more about your products.";
+    const url = `https://wa.me/${phoneNumber.replace(/\D/g, '')}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+  };
 
   return (
     <section id="products" className="py-20 bg-white">
@@ -105,7 +112,10 @@ const Products: React.FC = () => {
               
               <div className="flex justify-between items-center pt-4 border-t border-gray-100">
                 <span className="text-lg font-bold text-black">{product.price}</span>
-                <button className="bg-black hover:bg-yellow-400 hover:text-black text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300">
+                <button 
+                  onClick={handleLearnMoreClick}
+                  className="bg-black hover:bg-yellow-400 hover:text-black text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300"
+                >
                   Learn More
                 </button>
               </div>

@@ -51,7 +51,7 @@ const Hero: React.FC<HeroProps> = ({ onStoryClick }) => {
               onClick={onStoryClick}
               className="border-2 border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300"
             >
-              Learn Our Story
+              Our Story
             </button>
           </div>
         </div>
